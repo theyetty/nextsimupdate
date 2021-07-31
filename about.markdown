@@ -9,7 +9,7 @@ Do you ever get confused when a update for Microsoft Flight Simulator is droppin
 
 Well this is a problem no more! nextsimupdate.com is a super simple, easy website which shows you when the next sim update is. It will countdown to the exact moment its released, and show you when it comes out in your timezone.
 
-This project is open source and built with Jekyll. Please contribute at : https://github.com/theyetty/nextsimupdate if you wish!
+This project is open source and built with Jekyll. Please contribute at : <a href="https://github.com/theyetty/nextsimupdate">https://github.com/theyetty/nextsimupdate</a> if you wish!
 
 ## Privacy 🔒
 One of our main priorities is the privacy of our visitors.
