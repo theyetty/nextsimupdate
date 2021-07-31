@@ -1,0 +1,36 @@
+ul {
+  margin-left: 0px;
+}
+
+li.worldupdate {
+  border: 1px solid #007bff!important;
+  background-color: #c1ddfb;
+}
+
+li.simupdate {
+  border: 1px solid #dc3545!important;
+  background-color: #ffb3ba;
+}
+
+li.patch {
+  border: 1px solid #28a745!important;
+  background-color: #cbfbd6;
+}
+
+div div p {
+  font-size: 0.5rem;
+}
+
+li {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  background-color: #f5f5f5;
+  text-align: center;
+  margin-top: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  border-radius: 3px;
+  color: #434343;
+}

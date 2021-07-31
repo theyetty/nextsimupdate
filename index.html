@@ -1,0 +1,31 @@
+---
+layout: home
+---
+
+<center><h3>UPCOMING UPDATES</h3></center>
+<ul>
+    {% capture now %}{{'now' | date: '%s' | plus: 0 }}{% endcapture %} {% assign release_dates = site.release_dates %} {% for release_date in release_dates %} {% capture date %}{{release_date.to_date | date: '%s' | plus: 0 }}{% endcapture
+    %} {% if date >= now %}
+    <a href="{{ release_date.url }}">
+        <li class="{{ release_date.type }}">
+            <b>{{ release_date.title}}</b> <br />
+            {{ release_date.to_date | timeago }}
+        </li>
+    </a>
+    {% endif %} {% endfor %}
+</ul>
+
+<center><h3>PAST UPDATES</h3></center>
+<ul>
+    {% for release_date in site.release_dates %} {% capture date %}{{release_date.to_date | date: '%s' | plus: 0 }}{% endcapture %} {% if date < now %}
+    <a href="{{ release_date.url }}">
+        <li class="{{ release_date.type }}">
+            <b>{{ release_date.title}}</b> <br />
+            {{ release_date.to_date | timeago }}
+        </li>
+    </a>
+    {% endif %} {% endfor %}
+</ul>
+{% include calltoaction.html %}
+
+<link rel="stylesheet" href="../assets/css/main.css" />

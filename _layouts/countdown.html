@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div class="wrapper">
+            <div class="modal">
+                <div class="container" id="clockdiv">
+                    <h1>{{ page.title }}</h1>
+                    <h2 class="done"></h2>
+                    <center><div>{{ content }}</div></center>
+                    <div>{% include clock.html %}</div>
+                    <center>
+                        <h3>
+                            <script>
+                                var date = new Date("{{ page.to_date }}");
+                                document.write(date.toString());
+                            </script>
+                        </h3>
+                    </center>
+                    <center>
+                        <div id="disclaimer">
+                            <p class="disclaimer">
+                                All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them. Microsoft Flight Simulator
+                                registered trademarks of Microsoft Corporation in the United States and/or other countries. The site complies with Microsofts Game Content Usage Rules
+                            </p>
+                        </div>
+                        <div id="confetti-wrapper"></div>
+                        <style>
+                            body {
+                            	background: url("{{ page.background_image }}") no-repeat center center fixed;
+                            	background-color: #{{ page.background_color }};
+                            }
+                        </style>
+                        <script>
+                            var deadline = new Date(Date.parse("{{ page.to_date }}"));
+                        </script>
+                        <script src="../assets/js/countdown.js" charset="utf-8"></script>
+                        <link rel="stylesheet" href="../assets/css/clock.css" />
+                    </center>
+                </div>
+            </div>
+        </div>
+    </head>
+</html>
