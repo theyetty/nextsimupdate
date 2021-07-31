@@ -39,6 +39,11 @@ background_color: "000"
 ---
 ```
 
+Also please edit: https://github.com/theyetty/nextsimupdate/blob/main/_config.yml
+
+Look for order: and add the md file in the right order 
+(I cant get Jekylls auto ordering to work right atm, so this is manual for now)
+
 - title: is what its called, should start with PATCH, WORLD UPDATE OR SIM UPDATE
 - type: patch, worldupdate, simupdate
 - to_date: Must follow this pattern e.g. 01 January 2022 10:00:00 UUTC
